@@ -39,7 +39,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7.5%;
+    margin-top: 10%;
 }
 
 .left h1{
@@ -112,13 +112,14 @@ body{
 .navbar{
     width: 100%;
     /* height: 4rem; */
-    background-color: transparent;
+    background-color: #051530;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    z-index: 1000;
 }
 
 .navbar button{
@@ -126,6 +127,16 @@ body{
     color: #fff;
     border: none;
     padding: .75rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    background-color: #051530;
+    color: #fff;
+    border: #F27C24 solid 1px;
+    padding: .75rem 2rem;
+    border-radius: 2rem;
 }
 
 .navbar ul{
