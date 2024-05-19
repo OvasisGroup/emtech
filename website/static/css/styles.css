@@ -9,7 +9,7 @@
 
 .hero{
     height: 90vh;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,7 +18,7 @@
 }
 
 .hero-image{
-    width: 80%;
+    width: 90%;
 }
 
 .right{
@@ -41,7 +41,8 @@
 .left p{
     font-size: 1.5rem;
     color: #1548A3;
-
+    
+    text-transform: capitalize;
 }
 
 .button{
@@ -73,6 +74,8 @@
 .button p{
     color: white;
     font-size: 1rem;
+    letter-spacing: 0rem;
+    font-weight: 500;
 }
 
 .navbar{
