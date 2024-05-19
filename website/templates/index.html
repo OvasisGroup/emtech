@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block content %}
+    <section class="hero">
+        <div class="left">
+        <p data-aos="fade-up-left">
+            E&M Technology House Ltd.
+        </p>
+        <h1 data-aos="fade-down">End to End Finance and Banking Solutions </h1>
+        <div class="button" data-aos="fade-up-left">
+            <p>GET IN TOUCH</p>
+            <span class="material-symbols-outlined">
+            arrow_circle_right
+            </span>
+        </div>
+    </div>
+    <div class="right">
+         <img src="{% static 'images/homepage_image.png' %}" class="hero-image" alt="hero-image" width="600px" data-aos="fade-up"/>
+    </div>
+    </section>
+    <section class="quickiesone">
+    <div class="quickfactsnew">
+             {% for quick in quickfacts %}
+                <div data-aos="fade-up" class="quickies">
+                    <h4>{{ quick.numbers }}</h4>
+                    <p>{{ quick.body }}</p>
+                </div>
+                {% endfor %}
+        </div>
+    </section>
+
+    <section class="whoweare">
+        <div class="mainintro">
+        <div class="who-container">
+            {% for who in whoweare %}
+                <div data-aos="fade-up">
+                    <h4>{{ who.title }}</h4>
+                    <p>{{ who.body }}</p>
+                </div>
+                {% endfor %}
+        </div>
+        <div class="quickfacts">
+             {% for quick in quickfacts %}
+                <div data-aos="fade-up" class="quick">
+                    <h4>{{ quick.numbers }}</h4>
+                    <p>{{ quick.body }}</p>
+                </div>
+                {% endfor %}
+        </div>
+        </div>
+    </section>
+{% endblock %}
