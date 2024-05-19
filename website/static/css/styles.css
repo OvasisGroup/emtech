@@ -111,9 +111,47 @@ body{
 
 .navbar{
     width: 100%;
-    height: 4rem;
+    /* height: 4rem; */
     background-color: transparent;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar button{
+    background-color: #F27C24;
+    color: #fff;
+    border: none;
+    padding: .75rem 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul li:hover{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #F27C24;
+    transform: translateY(-0.2rem);
+    transition: all ease-in-out .3s;
+}
+
+.gratuip{
+    color: #F27C24;
 }
 
 .whoweare{
@@ -199,11 +237,17 @@ body{
 .quickies{
     background-color: #d9d9d9;
     padding: 3rem;
-    border: solid 1px white;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
 }
 
 .quickies:first-child{
     background-color: #1548A3;
+    border-left: none;
+}
+
+.quickies:last-child{
+    border-right: none;
 }
 
 .quickies:first-child h4{
