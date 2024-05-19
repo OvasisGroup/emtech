@@ -14,7 +14,7 @@
             We Offer Support for Banking, Finance and Public Sector
         </p>
         <div class="button" data-aos="fade-up-left">
-            <p>GET IN TOUCH</p>
+            GET IN TOUCH
             <span class="material-symbols-outlined">
             arrow_circle_right
             </span>
@@ -25,6 +25,24 @@
          
     </div>
     </section>
+
+    {% comment %} intro {% endcomment %}
+    <section class="whoweare">
+        <div class="mainbox">
+                <div class="box" data-aos="zoom-in-down" data-aos-once="false"></div>
+            </div>
+        <div class="who-container">
+            
+            {% for who in whoweare %}
+                <div data-aos="fade-up">
+                    <h4>{{ who.title }}</h4>
+                    <p>{{ who.body }}</p>
+                </div>
+                {% endfor %}
+        </div>
+    </section>
+
+    {% comment %} quicks {% endcomment %}
     <section class="quickiesone">
     <div class="quickfactsnew">
              {% for quick in quickfacts %}
@@ -36,24 +54,5 @@
         </div>
     </section>
 
-    <section class="whoweare">
-        <div class="mainintro">
-        <div class="who-container">
-            {% for who in whoweare %}
-                <div data-aos="fade-up">
-                    <h4>{{ who.title }}</h4>
-                    <p>{{ who.body }}</p>
-                </div>
-                {% endfor %}
-        </div>
-        <div class="quickfacts">
-             {% for quick in quickfacts %}
-                <div data-aos="fade-up" class="quick">
-                    <h4>{{ quick.numbers }}</h4>
-                    <p>{{ quick.body }}</p>
-                </div>
-                {% endfor %}
-        </div>
-        </div>
-    </section>
+    
 {% endblock %}

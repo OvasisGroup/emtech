@@ -98,7 +98,10 @@ body{
 
 .whoweare{
     padding: 4rem 0rem;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
 .mainintro{
@@ -109,14 +112,43 @@ body{
     gap: 3rem;
 }   
 
+.who-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
 .who-container h4{
     color: #F27C24;
     font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: #F27C24;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .who-container p{
     color: #000;
     font-weight: 200;
+    font-size: 1.1rem;
 }
 
 .quickfacts{
