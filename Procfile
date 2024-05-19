@@ -1,2 +1,2 @@
-release: python manage.py gradient
+release: python manage.py runserver
 web: gunicorn emtech.wsgi --log-file=-
