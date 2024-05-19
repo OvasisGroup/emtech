@@ -58,5 +58,17 @@
         </div>
     </section>
 
+    <section class="serviceintro">
+        <div class="serviceintropage">
+            {% for intro in serviceintro %}
+                <div data-aos="fade-down" >
+                    <p>{{ intro.body }}</p>
+                </div>
+                {% endfor %}
+        </div>
+    </section>
+
+    <img src="{% static 'images/businemmen.png' %}" width="40%" data-aos="fade-up"/>
+
     
 {% endblock %}
