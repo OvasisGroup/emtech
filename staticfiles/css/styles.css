@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    height: 90vh;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image{
+    width: 80%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left{
+    padding-right: 1rem;
+}
+
+.left h1{
+    font-size: 5rem;
+    width: 90%;
+    line-height: 4.5rem;
+    margin-top: 1rem;
+}
+.left p{
+    font-size: 1.5rem;
+    color: #1548A3;
+
+}
+
+.button{
+    background-color: #F27C24;
+    width: fit-content;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    gap: 0.5rem;
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+
+.button:hover{
+    background-color: #1548A3;
+}
+
+.button:hover span{
+    transform: translateX(.5rem);
+    transition: all ease-in-out .3s;
+}
+
+
+.button p{
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color: #1548A3;
+    position: fixed;
+}
+
+.whoweare{
+    padding: 4rem 0rem;
+    background-color: #d9d9d9;
+}
+
+.mainintro{
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}   
+
+.who-container h4{
+    color: #F27C24;
+    font-weight: 500;
+}
+
+.who-container p{
+    color: #000;
+    font-weight: 200;
+}
+
+.quickfacts{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.quickfactsnew{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.quick{
+    background-color: #F27C24;
+    padding: 2rem;
+}
+
+.quickies{
+    background-color: #d9d9d9;
+    padding: 3rem;
+    border: solid 1px white;
+}
+
+.quickies:first-child{
+    background-color: red;
+}
+
+.quickiesone{
+    width: 100%;
+    background-color: #1548A3;
+}
+
+.quickies h4{
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.quickies p{
+    color: #1548A3;
+    font-size: 1rem;
+    text-align: center;
+}
+
