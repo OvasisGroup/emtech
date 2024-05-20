@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import WhoWeAre
 from .models import QuickFacts
 from .models import ServiceIntro
+from .models import About
 
 
 def home(request):
@@ -13,7 +14,7 @@ def home(request):
     return render(request, 'index.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
 
 def about(request):
-    whoweare = WhoWeAre.objects.all()
+    about = About.objects.all()
     quickfacts = QuickFacts.objects.all()
     serviceintro = ServiceIntro.objects.all()
-    return render(request, 'about.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
+    return render(request, 'about.html', {'about': about, 'quickfacts': quickfacts, 'serviceintro': serviceintro})

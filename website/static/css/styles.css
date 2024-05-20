@@ -322,6 +322,7 @@ body{
     max-width: 90%;
     margin: 0 auto;
     height: 100%;
+    padding: 3rem 0rem;
 }
 
 .about-half-one h3{
@@ -373,4 +374,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-content{
+    background-color: white;
+    width: 100%;
+}
+
+.header-content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0rem;
+}
+
+.sub p{
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+}
+
+.about-content-one h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1548A3;
+    margin-top: 1rem;
+    padding-right: 3rem;
 }
