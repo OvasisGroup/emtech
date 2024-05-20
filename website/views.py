@@ -11,3 +11,9 @@ def home(request):
     quickfacts = QuickFacts.objects.all()
     serviceintro = ServiceIntro.objects.all()
     return render(request, 'index.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
+
+def about(request):
+    whoweare = WhoWeAre.objects.all()
+    quickfacts = QuickFacts.objects.all()
+    serviceintro = ServiceIntro.objects.all()
+    return render(request, 'about.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
