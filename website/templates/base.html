@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down">
       <div class="logo">
-         <img src="{% static 'images/emtechlogo.png' %}" width="100px" data-aos="fade-up"/>
+         <img src="{% static 'images/emtech_color_logo.png' %}" width="100px" data-aos="fade-up"/>
       </div>
       <ul>
         <li>Home</li>
@@ -38,7 +38,21 @@
     
     {% endblock %}
     {% comment %} END BODY {% endcomment %}
-
+    <section class="footer">
+      <div class="location-wrapper">
+        <div class="copyright">
+          <h3>FIND US</h3>
+          <p>3rd Floor, Samtech business park, Tatu city</p>
+          <p>P.O. Box 11001 - 00100,Nairobi Kenya.info@emtechhouse.co.ke</p>
+          <div class="images_social">
+            <img src="{% static 'images/WhatsApp.svg' %}" width="40px" data-aos="fade-up"/>
+            <img src="{% static 'images/LinkedIn.svg' %}" width="40px" data-aos="fade-up"/>
+            <img src="{% static 'images/Facebook.svg' %}" width="40px" data-aos="fade-up"/>
+          </div>
+        </div>
+      </div>
+      <div class="bottoms_copyright">&copy; Copyright, 2023 E&M Technology House Ltd. All rights reserved.</div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
