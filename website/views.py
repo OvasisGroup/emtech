@@ -18,3 +18,15 @@ def about(request):
     quickfacts = QuickFacts.objects.all()
     serviceintro = ServiceIntro.objects.all()
     return render(request, 'about.html', {'about': about, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
+
+def services(request):
+    return render(request, 'services.html', {})
+
+def products(request):
+    return render(request, 'products.html', {})
+
+def contacts(request):
+    return render(request, 'contacts.html', {})
+
+def gratuip(request):
+    return render(request, 'gratuip.html', {})

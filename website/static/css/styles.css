@@ -341,6 +341,18 @@ body{
     padding: 3rem 0rem;
 }
 
+.header-wrapper-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 3rem 0rem;
+}
+
 .about-half-one h3{
     color: #F27C24;
     font-weight: 800;
@@ -416,6 +428,62 @@ body{
     color: #1548A3;
     margin-top: 1rem;
     padding-right: 3rem;
+}
+
+.contactshead{
+    color: white;
+    margin: 1rem 0rem;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.subcontacts{
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.subcontacts p{
+    margin-bottom: 1rem;
+}
+
+.subcontacts h3{
+    color: #1548A3;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form input{
+    padding: .75rem 1rem;
+    background-color: lightgray;
+    border: none;
+}
+
+.contact-form textarea{
+    padding: .75rem 1rem;
+    background-color: lightgray;
+    border: none;
+    height: 150px;
+}
+
+.bitbutton{
+    padding: .75rem 1rem;
+    border: none;
+    background-color: #F27C24;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bitbutton:hover{
+    background-color: #1548A3;
+}
+
+.subtext p{
+    color: rgb(85, 84, 84);
+    font-weight: 300;
 }
 
 @media screen and (max-width: 960px) {
