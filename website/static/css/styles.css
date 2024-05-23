@@ -353,6 +353,13 @@ body{
     padding: 3rem 0rem;
 }
 
+.subtext-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
 .about-half-one h3{
     color: #F27C24;
     font-weight: 800;
@@ -364,6 +371,37 @@ body{
     font-weight: 200;
     font-size: 1.1rem;
     padding-right: 5rem;
+}
+
+.service-body{
+    padding: 2rem;
+    border: 1px solid #F27C24;
+    border-radius: 1rem;
+}
+
+.service-body a{
+    text-decoration: none;
+    list-style: none;
+    color: #F27C24;
+}
+
+.service-body p{
+    font-weight: 300;
+}
+
+.service-body:hover{
+    border: solid 1px #1548A3;
+    background-color: rgb(216, 224, 255);
+}
+
+.service-body h4{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.service-body h4:hover{
+    transform: translateY(-0.25rem);
+    transition: all ease-in-out .3s;
 }
 
 .about-half-two{
@@ -558,4 +596,18 @@ body{
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+}
+
+
+.services-content-wrapper{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.service-body{
+    text-align: center;
+}
+
+.service-body img{
+    margin-bottom: 1rem;
 }

@@ -5,6 +5,7 @@ from .models import WhoWeAre
 from .models import QuickFacts
 from .models import ServiceIntro
 from .models import About
+from .models import Services
 
 
 def home(request):
@@ -20,7 +21,8 @@ def about(request):
     return render(request, 'about.html', {'about': about, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
 
 def services(request):
-    return render(request, 'services.html', {})
+    services = Services.objects.all()
+    return render(request, 'services.html', {'services': services})
 
 def products(request):
     return render(request, 'products.html', {})
