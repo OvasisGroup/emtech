@@ -45,6 +45,18 @@
             </div>
     </section>
 
+    <section class="main-services" >
+        {% for serve in services %}
+            <a href="{% url 'services_detail' serve.id %}">
+                <div data-aos="fade-up" class="services_subs" data-aos="fade-up">
+                    <h4 data-aos="fade-up">{{ serve.title }}</h4>
+                    <p data-aos="fade-up">{{ serve.description |truncatechars:50 }}</p>
+                    <h4>READ MORE</h4>
+                </div>
+            </a>
+        {% endfor %}
+    </section>
+
    
 
   

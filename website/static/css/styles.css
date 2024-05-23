@@ -663,3 +663,22 @@ body{
     text-decoration: none;
     color: black;
 }
+
+.services_subs{
+    background-color: lightgrey;
+    padding: 1rem;    
+}
+
+.main-services a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.main-services{
+    max-width: 90%;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
