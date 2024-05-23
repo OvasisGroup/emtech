@@ -611,3 +611,55 @@ body{
 .service-body img{
     margin-bottom: 1rem;
 }
+
+.detailed-content{
+    max-width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 300;
+}
+
+.reachout{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    margin-top: -5rem;
+    background-color: #F27C24;
+    padding: 2rem;
+}
+
+.reachout input{
+    padding: .75rem 1rem;
+    background-color: #fff;
+    border: none;
+}
+
+.reachout textarea{
+    padding: .75rem 1rem;
+    background-color: #fff;
+    border: none;
+}
+
+.reachout button{
+    padding: .75rem 1rem;
+    background-color: #1548A3;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.reachout input:focus{
+    outline: none;
+}
+
+.subtext-services a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}

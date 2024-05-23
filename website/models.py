@@ -22,6 +22,7 @@ class ServiceIntro(models.Model):
         return self.title
 
 class Services(models.Model):
+    bg_image = models.ImageField(null=True, blank=True, upload_to='images/service/')
     image = models.ImageField(null=True, blank=True, upload_to='images/service/')
     title= models.CharField(max_length=50)
     description = models.TextField(null=True)

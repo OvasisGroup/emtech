@@ -29,12 +29,12 @@
             <div class="about-content-two" data-aos="fade-up">
                 <div class="subtext-services" data-aos="fade-up">
                     {% for serve in services %}
-                    <div data-aos="fade-up" class="service-body" data-aos="fade-up">
+                    <a href="{% url 'services_detail' serve.id %}"><div data-aos="fade-up" class="service-body" data-aos="fade-up">
                         <img src="{{ serve.image.url }}" alt="{{ serve.title }}" width="60px" data-aos="fade-up"/>
                         <h4 data-aos="fade-up">{{ serve.title }}</h4>
                         <p data-aos="fade-up">{{ serve.description |truncatechars:115 }}</p>
-                        <a href=""><h4>READ MORE</h4></a>
-                    </div>
+                        <h4>READ MORE</h4>
+                    </div></a>
                     {% endfor %}
                 </div>
             </div>

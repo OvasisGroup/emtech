@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+    Services
+{% endblock %}
+
+
+{% block content %}
+
+    <section class="about-header" style="background-image: url('{{ serves.bg_image.url }}')">
+        <div class="header-wrapper" >
+            <div class="about-half-one" data-aos="fade-up">
+                <img src="{{ serves.image.url }}" alt="{{ serves.title }}" width="60px" data-aos="fade-up"/>
+                <h3 data-aos="fade-up">{{ serves.title }}</h3>
+                <h4 class="contactshead">Research has shown that most organization are only able to get maximum of 60% out of the software product they have implemented .</h4>
+                
+            </div>
+        <div class="about-half-two-three">
+            <div class="about-half-one" data-aos="fade-up">
+                
+                <!-- <h3 data-aos="fade-up">Services</h3>
+                <h4 class="contactshead">Research has shown that most organization are only able to get maximum of 60% out of the software product they have implemented .</h4>
+                <p data-aos="fade-up">EMtechhouse has been founded to focus and address this issue to ensure that clients are able to utilize their implemented solutions to the maximum while minimizing on the operational cost.</p> -->
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="detailed-content" data-aos="fade-up">
+            <div data-aos="fade-up" class="service-body-out" data-aos="fade-up">
+                <p data-aos="fade-up">{{ serves.description }}</p>
+            </div>
+            <div class="reach-out">
+                <form class="reachout">
+                    <h4>MAKE INQUIRY</h4>
+                    <p>Please send us your Inquiry below</p>
+                    <input type="text" placeholder="Enter Full Name" required/>
+                    <input type="phone" placeholder="Enter Telephone" required/>
+                    <input type="email" placeholder="Enter Valid Email Address" required/>
+                    <textarea placeholder="Enter Inquiry"></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+    </section>
+
+   
+
+  
+  
+
+    
+    
+
+ 
+    
+{% endblock %}
