@@ -21,17 +21,19 @@
   </head>
   <body>
     <div class="navbar" data-aos="fade-down">
-      <div class="logo">
+      <div class="navcontent">
+      <div class="logo" data-aos="fade-down">
          <img src="{% static 'images/emtech_color_logo.png' %}" width="100px" data-aos="fade-up"/>
       </div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Products</li>
-        <li class="gratuip">GRATUIP</li>
+        <a href="{% url 'home' %}"><li>Home</li></a>
+        <a href="{% url 'about' %}"><li>About</li></a>
+        <a href="{% url 'home' %}"><li>Services</li></a>
+        <a href="{% url 'home' %}"><li>Products</li></a>
+        <a href="{% url 'home' %}"><li>Contacts</li></a>
+        <a href="{% url 'home' %}"><li class="gratuip">GRATUIP</li></a>
       </ul>
-      <button>Contact Us</button>
+    </div>
     </div>
     {% comment %} MAIN BODY {% endcomment %} 
     {% block content%} 
@@ -45,9 +47,9 @@
           <p>3rd Floor, Samtech business park, Tatu city</p>
           <p>P.O. Box 11001 - 00100,Nairobi Kenya.info@emtechhouse.co.ke</p>
           <div class="images_social">
-            <img src="{% static 'images/WhatsApp.svg' %}" width="40px" data-aos="fade-up"/>
-            <img src="{% static 'images/LinkedIn.svg' %}" width="40px" data-aos="fade-up"/>
-            <img src="{% static 'images/Facebook.svg' %}" width="40px" data-aos="fade-up"/>
+            <img src="{% static 'images/WhatsApp.svg' %}" width="30px" data-aos="fade-up"/>
+            <img src="{% static 'images/LinkedIn.svg' %}" width="30px" data-aos="fade-up"/>
+            <img src="{% static 'images/Facebook.svg' %}" width="30px" data-aos="fade-up"/>
           </div>
         </div>
       </div>

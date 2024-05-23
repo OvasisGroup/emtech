@@ -22,7 +22,7 @@
     </div>
     </section>
 
-    {% comment %} about content {% endcomment %}
+
     <section class="about-content">
         <div class="header-content-wrapper">
         <div class="about-content-one" data-aos="fade-up">
@@ -32,7 +32,7 @@
             </h4>
         </div>
         <div class="about-content-two">
-            <div class="sub">
+            <div class="subtext">
                 {% for abt in about %}
                 <div data-aos="fade-up" class="about-body">
                     <p  data-aos="fade-up">{{ abt.body | safe }}</p>

@@ -2,75 +2,75 @@
 {% load static %}
 
 {% block title %}
-    Home
+Home
 {% endblock %}
 
 
 {% block content %}
-    <section class="hero">
-        <div class="left">
+<section class="hero">
+    <div class="left">
         <h1 data-aos="fade-down">End to End Finance and Banking Solutions </h1>
-         <p data-aos="fade-up-left">
-            We Offer Support for Banking, Finance and Public Sector
+        <p data-aos="fade-up-left">
+            EMtechhouse has been founded to focus and address this issue to ensure that clients are able to utilize their implemented solutions to the maximum while minimizing on the operational cost
         </p>
         <div class="button" data-aos="fade-up-left">
             GET IN TOUCH
             <span class="material-symbols-outlined">
-            arrow_circle_right
+                arrow_circle_right
             </span>
         </div>
     </div>
-    <img src="{% static 'images/homebg-min.png' %}" class="hero-image" alt="hero-image" width="100%" data-aos="fade-up"/>
+    
     <div class="right">
-         
+        <img src="{% static 'images/homepage-lady.png' %}"  alt="hero-image" width="90%" data-aos="fade-up" />
     </div>
-    </section>
+</section>
 
-    {% comment %} intro {% endcomment %}
-    <section class="whoweare">
-        <div class="mainbox">
-                <div class="box" data-aos="zoom-in-down" data-aos-once="false"></div>
-            </div>
-        <div class="who-container">
-            
-            {% for who in whoweare %}
-                <div data-aos="fade-up">
-                    <h4>{{ who.title }}</h4>
-                    <p>{{ who.body }}</p>
-                </div>
-                {% endfor %}
+{% comment %} intro {% endcomment %}
+<section class="whoweare">
+    <div class="mainbox">
+        <div class="box" data-aos="zoom-in-down" data-aos-once="false"></div>
+    </div>
+    <div class="who-container">
 
-            <div class="button-two" data-aos="fade-up-left">
+        {% for who in whoweare %}
+        <div data-aos="fade-up">
+            <h4>{{ who.title }}</h4>
+            <p>{{ who.body }}</p>
+        </div>
+        {% endfor %}
+
+        <div class="button-two" data-aos="fade-up-left">
             READ MORE
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    {% comment %} quicks {% endcomment %}
-    <section class="quickiesone">
+{% comment %} quicks {% endcomment %}
+<section class="quickiesone">
     <div class="quickfactsnew">
-             {% for quick in quickfacts %}
-                <div data-aos="fade-up" class="quickies">
-                    <h4>{{ quick.numbers }}</h4>
-                    <p>{{ quick.body }}</p>
-                </div>
-                {% endfor %}
+        {% for quick in quickfacts %}
+        <div data-aos="fade-up" class="quickies">
+            <h4>{{ quick.numbers }}</h4>
+            <p>{{ quick.body }}</p>
         </div>
-    </section>
-
-    
-
-    <img src="{% static 'images/businemmen.png' %}" width="40%" data-aos="fade-up"/>
+        {% endfor %}
+    </div>
+</section>
 
 
-    <section class="serviceintro">
-        <div class="serviceintropage">
-            {% for intro in serviceintro %}
-                <div data-aos="fade-down" >
-                    <p>{{ intro.body }}</p>
-                </div>
-                {% endfor %}
+
+<img src="{% static 'images/businemmen.png' %}" width="40%" data-aos="fade-up" />
+
+
+<section class="serviceintro">
+    <div class="serviceintropage">
+        {% for intro in serviceintro %}
+        <div data-aos="fade-down">
+            <p>{{ intro.body }}</p>
         </div>
-    </section>
-    
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
