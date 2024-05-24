@@ -2,71 +2,75 @@
 {% load static %}
 
 {% block title %}
-    Gratuip
+Gratuip
 {% endblock %}
 
 
 {% block content %}
 
-    <section class="about-header">
-        <div class="header-wrapper">
+<section class="about-header">
+    <div class="header-wrapper">
         <div class="about-half-one" data-aos="fade-up">
-            <h3 data-aos="fade-up">About Us</h3>
-            <p data-aos="fade-up">EMTech specializes in Software Development, finance and banking Solutions Integrations, Project Delivery & IT infrastructure support in the verticals of Banking, finance and Public sector.</p>
+            <h3 data-aos="fade-up">Gratuip</h3>
+            <h4>Empowering Africa's Tech Future</h4>
+            <p data-aos="fade-up">
+                E and M Technology House is a pioneering technology company that has been at the forefront of driving
+                innovation and digital transformation in Africa. Founded with a mission to bridge the technology gap and
+                empower local talent, the company has established itself as a trusted partner for leading organizations
+                across various sectors, particularly in the banking and financial services industry.</p>
         </div>
         <div class="about-half-two">
-            <div class="sub">
-                <p>DOWNLOAD COMPANY PROFILE</p>
-            </div>
+
         </div>
     </div>
-    </section>
+</section>
 
 
-    <section class="about-content">
-        <div class="header-content-wrapper">
+<section class="about-content">
+    <div class="header-content-wrapper">
         <div class="about-content-one" data-aos="fade-up">
-    <img src="{% static 'images/mark.svg' %}"  alt="hero-image" width="100" data-aos="fade-up"/>
+            <img src="{% static 'images/mark.svg' %}" alt="hero-image" width="100" data-aos="fade-up" />
             <h4>
-                We understand that each client has unique needs and we work with them to define and plan a business optimization service model that suits their evolving requirements. 
+                We understand that each client has unique needs and we work with them to define and plan a business
+                optimization service model that suits their evolving requirements.
             </h4>
         </div>
         <div class="about-content-two">
             <div class="subtext">
                 {% for abt in about %}
                 <div data-aos="fade-up" class="about-body">
-                    <p  data-aos="fade-up">{{ abt.body | safe }}</p>
+                    <p data-aos="fade-up">{{ abt.body | safe }}</p>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-    </section>
+</section>
 
-  
-  
 
-    {% comment %} quicks {% endcomment %}
-    <section class="quickiesone">
+
+
+{% comment %} quicks {% endcomment %}
+<section class="quickiesone">
     <div class="quickfactsnew">
-             {% for quick in quickfacts %}
-                <div data-aos="fade-up" class="quickies">
-                    <h4>{{ quick.numbers }}</h4>
-                    <p>{{ quick.body }}</p>
-                </div>
-                {% endfor %}
+        {% for quick in quickfacts %}
+        <div data-aos="fade-up" class="quickies">
+            <h4>{{ quick.numbers }}</h4>
+            <p>{{ quick.body }}</p>
         </div>
-    </section>
+        {% endfor %}
+    </div>
+</section>
 
-    
-    <section class="newsletter">
-        <h3>Join Our Mailing List</h3>
-        <p>Subscribe to get updates from E&M Technologies Ltd.</p>
-        <forms class="mailinglist">
-            <input type="email" placeholder="Enter Email to Subscribe" required />
-            <button type="submit">SUBSCRIBE</button>
-        </forms>
-    </section>
- 
-    
+
+<section class="newsletter">
+    <h3>Join Our Mailing List</h3>
+    <p>Subscribe to get updates from E&M Technologies Ltd.</p>
+    <forms class="mailinglist">
+        <input type="email" placeholder="Enter Email to Subscribe" required />
+        <button type="submit">SUBSCRIBE</button>
+    </forms>
+</section>
+
+
 {% endblock %}
