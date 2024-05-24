@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+    font-family: "Work Sans", sans-serif;
+    font-size: 17px;
     padding: 0;
     margin: 0;
 }
@@ -112,7 +113,7 @@ body{
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    /* margin-top: 10%; */
+    max-width: 85%;
 }
 
 .left h1{
@@ -126,7 +127,8 @@ body{
     font-size: 1rem;
     color: gray;
     margin-top: 1rem;
-    width: 80%;
+    font-weight: 300;
+    width: 90%;
 }
 
 .newsletter{
@@ -364,8 +366,9 @@ body{
 
 .who-container p{
     color: #000;
-    font-weight: 200;
-    font-size: 1.3rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 
 .quickfacts{
@@ -668,7 +671,7 @@ width: 50%;
 
 .about-content-one h4{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 800;
     color: #1548A3;
     margin-top: 1rem;
     padding-right: 3rem;
