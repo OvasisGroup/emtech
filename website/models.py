@@ -62,3 +62,13 @@ class WhoWeAre(models.Model):
     
     def __str__(self):
         return self.title
+
+class Logos(models.Model):
+    image = models.ImageField(null=True, blank=True, upload_to='images/logos/')
+    title= models.CharField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = "Client Logos"
+    
+    def __str__(self):
+        return self.title

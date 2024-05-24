@@ -6,13 +6,15 @@ from .models import QuickFacts
 from .models import ServiceIntro
 from .models import About
 from .models import Services
+from .models import Logos
 
 
 def home(request):
+    logos = Logos.objects.all()
     whoweare = WhoWeAre.objects.all()
     quickfacts = QuickFacts.objects.all()
     serviceintro = ServiceIntro.objects.all()
-    return render(request, 'index.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro})
+    return render(request, 'index.html', {'whoweare': whoweare, 'quickfacts': quickfacts, 'serviceintro': serviceintro, 'logos':logos})
 
 def about(request):
     about = About.objects.all()

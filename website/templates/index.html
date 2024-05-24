@@ -13,18 +13,20 @@ Home
         <p data-aos="fade-up-left">
             EMtechhouse has been founded to focus and address this issue to ensure that clients are able to utilize their implemented solutions to the maximum while minimizing on the operational cost
         </p>
-        <div class="button" data-aos="fade-up-left">
-            GET IN TOUCH
+       <a href="{% url 'services' %}"><div class="button" data-aos="fade-up-left">
+            VIEW MORE
             <span class="material-symbols-outlined">
                 arrow_circle_right
             </span>
-        </div>
+        </div></a>
     </div>
     
     <div class="right">
         <img src="{% static 'images/homepage-lady.png' %}"  alt="hero-image" width="90%" data-aos="fade-up" />
     </div>
 </section>
+
+
 
 {% comment %} intro {% endcomment %}
 <section class="whoweare">
@@ -40,10 +42,26 @@ Home
         </div>
         {% endfor %}
 
-        <div class="button-two" data-aos="fade-up-left">
+        <a href="{% url 'about' %}"><div class="button-two" data-aos="fade-up-left">
             READ MORE
-        </div>
+        </div></a>
     </div>
+</section>
+<p style="display: flex; justify-content: center; font-weight: 700;">OUR CLIENTS:</p>
+<section >
+    <div class="logos">
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+  
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+      </div>
 </section>
 
 {% comment %} quicks {% endcomment %}
@@ -59,8 +77,26 @@ Home
 </section>
 
 
+<section class="gratuip-section">
+    <div class="gratuip_left">
+        <img src="{% static 'images/students.jpg' %}" width="100%" data-aos="fade-up" />
+    </div>
+    <div class="gratuip_right">
+        <h2 data-aos="fade-up-left">GRATUIP: </h2>
+        <small data-aos="fade-up-left">Bridging the Talent Gap in Africa</small>
+        <p data-aos="fade-up-left">As E and M Technology House looks to the future, its sights are set on even greater heights. With a bold goal of training 100,000 talents by 2030, the company is committed to scaling its GRATUIP initiative and replicating its success across the African continent. </p>
+        <ul>
+            <li>Incubation Programs</li>
+            <li>Intellectual Property</li>
+            <li>Commercialization Potential</li>
+            <li>Global Reach</li>
+        </ul>
+        <a href="{% url 'gratuip' %}"><h4>
+            READ MORE
+        </h4></a>
+    </div>
+</section>
 
-<img src="{% static 'images/businemmen.png' %}" width="40%" data-aos="fade-up" />
 
 
 <section class="serviceintro">

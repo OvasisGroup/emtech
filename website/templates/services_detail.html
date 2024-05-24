@@ -8,7 +8,7 @@
 
 {% block content %}
 
-    <section class="about-header" style="background-image: url('{{ serves.bg_image.url }}')">
+    <section class="about-header" style="background-image: url('{{ serves.bg_image.url }}'); background-position: center; background-size: cover;">
         <div class="header-wrapper" >
             <div class="about-half-one" data-aos="fade-up">
                 <img src="{{ serves.image.url }}" alt="{{ serves.title }}" width="60px" data-aos="fade-up"/>
@@ -30,7 +30,7 @@
 
     <section class="detailed-content" data-aos="fade-up">
             <div data-aos="fade-up" class="service-body-out" data-aos="fade-up">
-                <p data-aos="fade-up">{{ serves.description }}</p>
+                <p data-aos="fade-up">{{ serves.description | safe | linebreaks }}</p>
             </div>
             <div class="reach-out">
                 <form class="reachout">
@@ -45,13 +45,17 @@
             </div>
     </section>
 
+    <section class="detailed-content" data-aos="fade-up">
+        <h1>Related services</h1>
+    </section>
+
     <section class="main-services" >
         {% for serve in services %}
             <a href="{% url 'services_detail' serve.id %}">
                 <div data-aos="fade-up" class="services_subs" data-aos="fade-up">
                     <h4 data-aos="fade-up">{{ serve.title }}</h4>
                     <p data-aos="fade-up">{{ serve.description |truncatechars:50 }}</p>
-                    <h4>READ MORE</h4>
+                    <h5>READ MORE</h5>
                 </div>
             </a>
         {% endfor %}

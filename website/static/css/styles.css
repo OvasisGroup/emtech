@@ -12,7 +12,7 @@ body{
 }
 
 .hero{
-    height: 100vh;
+    height: 90vh;
     max-width: 90%;
     margin: 0 auto;
     display: grid;
@@ -25,6 +25,73 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+.left a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.gratuip-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    max-width: 90%;
+}
+
+.gratuip_left img{
+    border-radius: 2rem;
+}
+
+.gratuip_right h2{
+    font-size: 3rem;
+    color: #F27C24;
+}
+
+.gratuip_right small{
+    font-size: 1rem;
+    color: gray;
+}
+
+.gratuip_right p{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.gratuip_right a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: #F27C24;
+    cursor: pointer;
+}
+
+.gratuip_right h4{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.gratuip_right ul{
+    list-style: none;
+    margin: 1rem 0rem;
+}
+
+.gratuip_right li{
+    border-bottom: #1548A3 solid 1px;
+    font-weight: 300;
+    padding: .5rem 0rem;
+}
+
+.who-container a{
+    text-decoration: none;
+    list-style: none;
 }
 
 .right{
@@ -355,7 +422,7 @@ body{
 
 .subtext-services{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
 }
@@ -665,7 +732,7 @@ body{
 }
 
 .services_subs{
-    background-color: lightgrey;
+    background-color: #ebebec;
     padding: 1rem;    
 }
 
@@ -681,4 +748,76 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    transition: all ease-in-out 3s;
 }
+
+.services_subs:hover{
+    border-left: #1548A3 solid 10px;
+    padding-left: 2rem;
+    transition: all ease-in-out 3s;
+}
+
+.services_subs p{
+    font-weight: 300;
+    padding: .5rem 0rem;
+}
+
+.services_subs h5{
+    color: #F27C24;
+}
+
+.services_subs h4{
+    color: #1548A3;
+}
+
+/* LOGO SLIDERS */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  /* .logos:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
