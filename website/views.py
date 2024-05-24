@@ -7,6 +7,8 @@ from .models import ServiceIntro
 from .models import About
 from .models import Services
 from .models import Logos
+from .models import ProductsTopImage
+from .models import KeyProducts
 
 
 def home(request):
@@ -32,10 +34,17 @@ def services_detail(request,id):
     return render(request, 'services_detail.html', {"serves" : serves, 'services': services})
 
 def products(request):
-    return render(request, 'products.html', {})
+    pro = ProductsTopImage.objects.all()
+    products = KeyProducts.objects.all()
+    return render(request, 'products.html', {"pro" : pro, 'products': products})
 
 def contacts(request):
     return render(request, 'contacts.html', {})
 
 def gratuip(request):
     return render(request, 'gratuip.html', {})
+
+def product_image(request):
+    pro = ProductsTopImage.objects.all()
+    return render(request, 'products.html', {"pro" : pro})
+

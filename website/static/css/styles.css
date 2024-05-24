@@ -471,6 +471,17 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-wrapper-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: flex-start;
     gap: 3rem;
     max-width: 90%;
@@ -536,12 +547,68 @@ body{
     align-items: flex-start;
     justify-content: flex-end;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-image: url('../images/about-image.png');
     background-position: center;
     background-size: cover;
     border-radius: 2rem;
+}
 
+.about-half-three{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/products-card.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.products-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80%;
+    /* background-image: url('../images/products.png');
+    background-position: center;
+    background-size: cover; */
+    background-color: #1548A3;
+    padding-top: 6rem;
+}
+
+.about-half-two-three img{
+width: 50%;
+}
+
+.mainproducts h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.products p{
+    background-color: rgb(193, 189, 189);
+    padding: 2rem;
+    border-left: #1548A3 1pc solid;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.mainproducts{
+    max-width: 90%;
+    margin: 4rem auto;
 }
 
 .about-half-two p{
@@ -792,7 +859,8 @@ body{
 
 .services_subs{
     background-color: #ebebec;
-    padding: 1rem;    
+    padding: 1rem;   
+    border-right: #1548A3 solid 1px; 
 }
 
 .main-services a{
@@ -803,17 +871,18 @@ body{
 
 .main-services{
     max-width: 90%;
-    margin: 0rem auto;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    transition: all ease-in-out 3s;
+    transition: all ease-in-out .3s;
 }
 
 .services_subs:hover{
     border-left: #1548A3 solid 10px;
     padding-left: 2rem;
     transition: all ease-in-out 3s;
+    border-right: none; 
 }
 
 .services_subs p{

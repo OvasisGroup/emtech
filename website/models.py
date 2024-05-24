@@ -72,3 +72,19 @@ class Logos(models.Model):
     
     def __str__(self):
         return self.title
+
+class KeyProducts(models.Model):
+    title = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name_plural = "Key Products"
+    
+    def __str__(self):
+        return self.title
+
+class ProductsTopImage(models.Model):
+    image = models.ImageField(null=True, blank=True, upload_to='images/logos/')
+
+    class Meta:
+        verbose_name_plural = "Products Top Image"
+    
