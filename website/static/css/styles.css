@@ -89,6 +89,12 @@ body{
     padding: .5rem 0rem;
 }
 
+.gratuip_right li:hover{
+    background-color: rgb(231, 227, 227);
+    padding-left: .3rem;
+    transform: translateX(0.3rem);
+}
+
 .who-container a{
     text-decoration: none;
     list-style: none;
@@ -121,6 +127,59 @@ body{
     color: gray;
     margin-top: 1rem;
     width: 80%;
+}
+
+.newsletter{
+    background-color: #0954d6;
+    padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.mailinglist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: .75rem;
+    gap: .5rem;
+}
+
+.mailinglist button{
+    background-color: #F27C24;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mailinglist button:hover{
+    background-color: #1548A3;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.mailinglist input{
+    padding: .75rem 1rem;
+    border: none;
+    width: 70%;
+}
+
+.mailinglist button{
+    padding: .75rem 1rem;
+    border: none;
+}
+
+.newsletter h3{
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .button{
