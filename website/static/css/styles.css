@@ -569,7 +569,61 @@ body{
     margin-bottom: 1rem;
 }
 
+.maincore{
+    background-color: rgb(236, 232, 232);
+    padding: 2rem 0rem;
+}
+
+.maincore-two{
+    background-color: #1548A3;
+    padding: 2rem 0rem;
+    color: white;
+}
+
+.maincore-two h1,
+.maincore-two h2{
+    color: #F27C24;
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+.maincore h1,
+.maincore h2{
+    color: #1548A3;
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+.maincore-wrapper{
+    margin: 3rem auto;
+    max-width: 90%;
+}
+
+.core{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.core h4{
+    color: gray;
+    font-size: 130%;
+    padding-bottom: .5rem;
+}
+
 @media screen and (max-width: 960px) {
+    .maincor-ewrapper{
+        margin: 3rem auto;
+        max-width: 90%;
+    }
+    .maincore h1,
+    .maincore h2{
+        color: #1548A3;
+        font-size: 140%;
+        margin-bottom: 1rem;
+    }
     .gratuip-content-wrapper{
         max-width: 80%;
         margin: 2rem auto;
@@ -579,6 +633,19 @@ body{
         color: #1548A3;
         font-size: 140%;
         margin-bottom: 1rem;
+    }
+    .core{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .core h4{
+        color: gray;
+        font-size: 100%;
+        padding-bottom: .5rem;
     }
 }
 

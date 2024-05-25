@@ -42,7 +42,8 @@ def contacts(request):
     return render(request, 'contacts.html', {})
 
 def gratuip(request):
-    return render(request, 'gratuip.html', {})
+    quickfacts = QuickFacts.objects.all()
+    return render(request, 'gratuip.html', {'quickfacts': quickfacts})
 
 def product_image(request):
     pro = ProductsTopImage.objects.all()
