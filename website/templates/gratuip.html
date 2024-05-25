@@ -65,7 +65,7 @@ Gratuip
         </div>
     </div>
 </section>
-<img src="{% static 'images/bgtalent.png' %}"  alt="talent-image" width="100%" data-aos="fade-up"/>
+<img src="{% static 'images/bgtalent.png' %}" alt="talent-image" width="100%" data-aos="fade-up" />
 <section class="maincore-two">
     <div class="maincore-wrapper">
         <h1>GRATUIP: <br> Bridging the Talent Gap in Africas</h1>
@@ -95,12 +95,49 @@ Gratuip
     </div>
 </section>
 
+<section class="maincore-three">
+    <div class="side-image"></div>
+    <div class="maincore-wrapper-three">
+        <h1>Empowering Minds, Shaping Futures: <br>The GRATUIP Curriculum</h1>
+        <div class="core-three">
+            <div>
+                <h4>Comprehensive Curriculum</h4>
+                <p>The GRATUIP training program is designed to provide a comprehensive education, covering a wide range
+                    of topics, from foundational programming concepts to advanced technologies and industry-specific
+                    applications. The curriculum is constantly evolving to keep pace with the rapidly changing tech
+                    landscape, ensuring that participants are equipped with the most relevant and in-demand skills.</p>
+            </div>
+            <div>
+                <h4>Hands-on Learning</h4>
+                <p>Beyond theoretical knowledge, GRATUIP emphasizes practical, hands-on learning experiences.
+                    Participants engage in real-world projects, collaborate on team-based challenges, and have the
+                    opportunity to work with cutting-edge technologies under the guidance of experienced mentors and
+                    industry experts.</p>
+            </div>
+            <div>
+                <h4>Personalized Mentorship</h4>
+                <p>The program's mentorship component is a key differentiator, providing participants with personalized
+                    guidance and support from seasoned professionals. These mentors share their expertise, offer career
+                    advice, and help participants navigate the complexities of the tech industry, ensuring a
+                    well-rounded learning experience.</p>
+            </div>
+            <div>
+                <h4>Global Partnerships</h4>
+                <p>GRATUIP has forged partnerships with leading global technology companies and institutions, allowing
+                    participants to engage with industry leaders, access exclusive resources, and gain exposure to
+                    international best practices. This global collaboration further enhances the program's ability to
+                    prepare its graduates for success in the global tech landscape.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {% comment %} quicks {% endcomment %}
 <section class="quickiesone">
     <div class="quickfactsnew">
         {% for quick in quickfacts %}
-        <div data-aos="fade-up" class="quickies">
+        <div  class="quickies">
             <h4>{{ quick.numbers }}</h4>
             <p>{{ quick.body }}</p>
         </div>
