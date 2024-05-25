@@ -557,6 +557,31 @@ body{
     border-radius: 2rem;
 }
 
+.gratuip-content-wrapper{
+    max-width: 60%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.gratuip-content-one h4{
+    color: #1548A3;
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+    .gratuip-content-wrapper{
+        max-width: 80%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .gratuip-content-one h4{
+        color: #1548A3;
+        font-size: 140%;
+        margin-bottom: 1rem;
+    }
+}
+
 .about-half-three{
     display: flex;
     flex-direction: column;
