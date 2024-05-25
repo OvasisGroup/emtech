@@ -613,6 +613,19 @@ p{
     margin-bottom: 1rem;
 }
 
+.maincore-white h1,
+.maincore-white h2{
+    color: #1548A3;
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+.maincore-white span{
+    color: #1548A3;
+    font-size: 4rem;
+    margin: 1rem 0rem;
+}
+
 .maincore-wrapper{
     margin: 3rem auto;
     max-width: 90%;
@@ -643,6 +656,20 @@ p{
     padding-bottom: .5rem;
 }
 
+.core-four{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.core-four h4{
+    color: gray;
+    font-size: 130%;
+    padding-bottom: .5rem;
+}
+
 .side-image{
     width: 100%;
     height: 100%;
@@ -653,6 +680,31 @@ p{
 
 
 @media screen and (max-width: 960px) {
+.maincore-white h1,
+.maincore-white h2{
+    color: #1548A3;
+    font-size: 140%;
+    margin-bottom: 1rem;
+}
+    .core-four h4{
+        color: gray;
+        font-size: 100%;
+        padding-bottom: .5rem;
+    }
+    .core-four{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maincore-three{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
     .maincor-ewrapper{
         margin: 3rem auto;
         max-width: 90%;
