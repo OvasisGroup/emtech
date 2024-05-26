@@ -26,7 +26,21 @@ Home
     </div>
 </section>
 
-
+<section >
+    <div class="logos">
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+  
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+      </div>
+</section>
 
 {% comment %} intro {% endcomment %}
 <section class="whoweare">
@@ -77,8 +91,8 @@ Home
     </div>
 </section>
 
-<div class="client"><p style="display: flex; justify-content: center; font-weight: 500; background-color: #1548A3; width: fit-content; align-items: center; padding: 1rem 2rem; border-radius: 0rem 0rem 3rem 3rem;">HAPPY CLIENTS:</p></div>
-<section >
+<!-- <div class="client"><p style="display: flex; justify-content: center; font-weight: 500; background-color: #1548A3; width: fit-content; align-items: center; padding: 1rem 2rem; border-radius: 0rem 0rem 3rem 3rem;">HAPPY CLIENTS:</p></div> -->
+<!-- <section >
     <div class="logos">
         <div class="logos-slide">
             {% for logo in logos %}
@@ -92,11 +106,11 @@ Home
             {% endfor %}
         </div>
       </div>
-</section>
+</section> -->
 
 
 
-<section class="serviceintro">
+<!-- <section class="serviceintro">
     <div class="serviceintropage">
         {% for intro in serviceintro %}
         <div data-aos="fade-down">
@@ -104,7 +118,7 @@ Home
         </div>
         {% endfor %}
     </div>
-</section>
+</section> -->
 
 <section class="newsletter">
     <h3>Join Our Mailing List</h3>
