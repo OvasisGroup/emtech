@@ -38,7 +38,7 @@
         </span>     
     </div>
     </div>
-    <div class="mobile-nav mobnav" >
+    <!-- <div class="mobile-nav mobnav" >
         <span class="material-symbols-outlined hamclose" >
           close
           </span>
@@ -51,8 +51,7 @@
           <a href="{% url 'gratuip' %}"><li class="gratuip">GRATUIP</li></a>
         </ul>
         <br/>
-        <img src="{% static 'images/homepage-lady.png' %}"  alt="hero-image" width="90%" data-aos="fade-up" />    
-    </div>
+    </div> -->
     {% comment %} MAIN BODY {% endcomment %} 
     {% block content%} 
     
@@ -79,24 +78,6 @@
       AOS.init();
     </script>
 
-    <script>
-      let ham = document.querySelector(".ham");
-      let mobnav = document.querySelector(".mobnav");
-      let hamclose = document.querySelector(".hamclose");
-
-      ham.onclick = function(){
-        ham.classList.toggle("active");
-        mobnav.classList.toggle("active");
-        hamclose.classList.toggle("active");
-      }
-
-      document.onclick = function(e){
-        if (!ham.contains(e.target) && !mobnav.contains(e.target)){
-          ham.classList.remove("active");
-          mobnav.classList.remove("active");
-          hamclose.classList.remove("active");
-        }
-      }
-    </script>
+   
   </body>
 </html>
