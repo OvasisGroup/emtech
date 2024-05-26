@@ -597,7 +597,12 @@ p{
 .about-header{
     padding-top: 6rem;
     background-color: #1548A2;
-    height: 70vh;
+
+}
+
+.contacts-header{
+    padding-top: 6rem;
+    background-color: #1548A2;
 }
 
 .header-wrapper{
@@ -817,6 +822,26 @@ p{
 
 
 @media screen and (max-width: 960px) {
+    .about-header{
+        padding-top: 6rem;
+        background-color: #1548A2;
+    }
+    .header-wrapper-two{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .subtext-services{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    
+    }
 .maincore-white h1,
 .maincore-white h2{
     color: #1548A3;
@@ -1060,6 +1085,11 @@ width: 50%;
 }
 
 @media screen and (max-width: 960px) {
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
     .header-wrapper {
     display: flex;
     flex-direction: column;
@@ -1292,4 +1322,29 @@ width: 50%;
   .logos-slide img {
     height: 50px;
     margin: 0 40px;
+  }
+
+  @media screen and (max-width: 960px) {
+    .detailed-content{
+        max-width: 90%;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        font-weight: 300;
+    }
+    .reach-out{
+        margin-top: 5rem;
+    }
+    .main-services{
+        max-width: 90%;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        transition: all ease-in-out .3s;
+    }
+    
   }

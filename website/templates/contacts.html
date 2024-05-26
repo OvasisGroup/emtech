@@ -8,7 +8,7 @@
 
 {% block content %}
 
-    <section class="about-header">
+    <section class="contacts-header">
         <div class="header-wrapper-two">
         <div class="about-half-one" data-aos="fade-up">
             <h3 data-aos="fade-up">Contacts</h3>
@@ -16,17 +16,7 @@
             <p data-aos="fade-up">EMtechhouse has been founded to focus and address this issue to ensure that clients are able to utilize their implemented solutions to the maximum while minimizing on the operational cost.</p>
         </div>
         <div class="contacts-half-two" data-aos="fade-up">
-            <div class="subcontacts" data-aos="fade-up">
-                <h3>CONTACT US</h3>
-                <p>Please fill the form below to reach us!</p>
-                <form class="contact-form" data-aos="fade-up">
-                    <input type="text" placeholder="Enter Name" required/>
-                    <input type="email" placeholder="Enter Email Address" required/>
-                    <input type="phone" placeholder="Enter Phone Number" required/>
-                    <textarea placeholder="Enter Message" required></textarea>
-                    <button class="bitbutton" rows="6" cols="50">SEND MESSAGE</button>
-                </form>
-            </div>
+            
         </div>
     </div>
     </section>
@@ -46,12 +36,16 @@
 
 
         <div class="about-content-two">
-            <div class="subtext">
-                {% for abt in about %}
-                <div data-aos="fade-up" class="about-body">
-                    <p  data-aos="fade-up">{{ abt.body | safe }}</p>
-                </div>
-                {% endfor %}
+            <div class="subcontacts" data-aos="fade-up">
+                <h3>CONTACT US</h3>
+                <p>Please fill the form below to reach us!</p>
+                <form class="contact-form" data-aos="fade-up">
+                    <input type="text" placeholder="Enter Name" required/>
+                    <input type="email" placeholder="Enter Email Address" required/>
+                    <input type="phone" placeholder="Enter Phone Number" required/>
+                    <textarea placeholder="Enter Message" required></textarea>
+                    <button class="bitbutton" rows="6" cols="50">SEND MESSAGE</button>
+                </form>
             </div>
         </div>
     </div>
