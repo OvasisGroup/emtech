@@ -7,23 +7,18 @@
 
 
 {% block content %}
+<img src="{% static 'images/bgservices.png' %}"  alt="hero-im" width="100%" data-aos="fade-up"/>
 
-    <section class="about-header">
-        <div class="header-wrapper">
-            <div class="about-half-one" data-aos="fade-up">
-                <h3 data-aos="fade-up">Services</h3>
-                <h4 class="contactshead">Research has shown that most organization are only able to get maximum of 60% out of the software product they have implemented</h4>
-                <p data-aos="fade-up">EMtechhouse has been founded to focus and address this issue to ensure that clients are able to utilize their implemented solutions to the maximum while minimizing on the operational cost.</p>
-            </div>
-        <div class="about-half-service">
-
-        </div>
-    </div>
-    </section>
 
 
     <section class="about-content" data-aos="fade-up">
         <div class="services-content-wrapper" data-aos="fade-up">
+            <div class="about-half-one" data-aos="fade-up">
+                <!-- <img src="{% static 'images/homepage-lady.png' %}"  alt="hero-image" width="90%" data-aos="fade-up" /> -->
+                <h3 data-aos="fade-up">Services</h3>
+                <h4 class="">Research has shown that most organization are only able to get maximum of 60% out of the software product they have implemented</h4>
+                
+            </div>
             <div class="about-content-two" data-aos="fade-up">
                 <div class="subtext-services" data-aos="fade-up">
                     {% for serve in services %}

@@ -2,68 +2,60 @@
 {% load static %}
 
 {% block title %}
-    Products
+Products
 {% endblock %}
 
 
 {% block content %}
 
 
+<img src="{% static 'images/bgproducts.png' %}" alt="hero-im" width="100%" data-aos="fade-up" />
 
-    <section class="about-header" >
-        <div class="header-wrapper-two">
-            <div class="about-half-one" data-aos="fade-up">
-                <h3 data-aos="fade-up">Products</h3>
-                <h4 class="contactshead">Research has shown that most organization are only able to get maximum of 60% out of the software product they have implemented</h4>
-                <p data-aos="fade-up">We take care of technology as you focus on the organization’s core business. We deploy resources that manage the organization’s applications and ensure the smooth running of IT solutions. This can be done on-premises or on demand.</p>
-            </div>
-            <div class="about-half-three">
-
-            </div>
+<div class="mainproducts">
+    <div class="about-half-one" data-aos="fade-up">
+        <h3 data-aos="fade-up">Products</h3>
+        <h4 class="">Research has shown that most organization are only able to get maximum of 60% out of
+            the software product they have implemented</h4>
+      
     </div>
-    </section>
-
-
-
-
-
-        <div class="mainproducts">
-            <h3>We have the following solutions in our product portfolio:</h3>
-            <div class="products">
-                {% for prods in products %}
-                    <p  data-aos="fade-left">{{ prods.title }}</p>
-                {% endfor %}
-            </div>
+    <div>
+        <h3>We have the following solutions in our product portfolio:</h3>
+        <div class="products">
+            {% for prods in products %}
+            <p data-aos="fade-left">{{ prods.title }}</p>
+            {% endfor %}
         </div>
     </div>
+</div>
+</div>
 
 
-    {% for pr in pro %}
-    <div data-aos="fade-up" class="about-body">
-        <img src="{{ pr.images.url }}" />
-    </div>
-    {% endfor %}
-    
-    <section class="quickiesone">
+{% for pr in pro %}
+<div data-aos="fade-up" class="about-body">
+    <img src="{{ pr.images.url }}" />
+</div>
+{% endfor %}
+
+<section class="quickiesone">
     <div class="quickfactsnew">
-             {% for quick in quickfacts %}
-                <div data-aos="fade-up" class="quickies">
-                    <h4>{{ quick.numbers }}</h4>
-                    <p>{{ quick.body }}</p>
-                </div>
-                {% endfor %}
+        {% for quick in quickfacts %}
+        <div data-aos="fade-up" class="quickies">
+            <h4>{{ quick.numbers }}</h4>
+            <p>{{ quick.body }}</p>
         </div>
-    </section>
+        {% endfor %}
+    </div>
+</section>
 
-    <section class="newsletter">
-        <h3>Join Our Mailing List</h3>
-        <p>Subscribe to get updates from E&M Technologies Ltd.</p>
-        <forms class="mailinglist">
-            <input type="email" placeholder="Enter Email to Subscribe" required />
-            <button type="submit">SUBSCRIBE</button>
-        </forms>
-    </section> 
+<section class="newsletter">
+    <h3>Join Our Mailing List</h3>
+    <p>Subscribe to get updates from E&M Technologies Ltd.</p>
+    <forms class="mailinglist">
+        <input type="email" placeholder="Enter Email to Subscribe" required />
+        <button type="submit">SUBSCRIBE</button>
+    </forms>
+</section>
 
- 
-    
+
+
 {% endblock %}

@@ -14,6 +14,10 @@ body{
      background-color: #ffffff;
 }
 
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+}
+
 p{
     font-weight: 300;
     line-height: 140%;
@@ -62,7 +66,8 @@ p{
 
 .gratuip_right small{
     font-size: 1rem;
-    color: gray;
+    color: #1548A3;
+    font-weight: 700;
 }
 
 .gratuip_right p{
@@ -196,6 +201,7 @@ p{
 .newsletter h3{
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .button{
@@ -343,9 +349,18 @@ p{
     color: #F27C24;
 }
 
+.client{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: 1px solid #1548A3;
+}
+
 .whoweare{
     padding: 4rem 0rem;
-    background-color: #ffffff;
+    background-color: #f0eef4;
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -659,9 +674,8 @@ p{
 
 
 .about-header{
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
     background-color: #1548A2;
-
 }
 
 .contacts-header{
@@ -670,6 +684,7 @@ p{
 }
 
 .header-wrapper{
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -678,7 +693,8 @@ p{
     max-width: 90%;
     margin: 0 auto;
     height: 100%;
-    padding: 3rem 0rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
 }
 
 .header-wrapper-two{
@@ -717,8 +733,13 @@ p{
     font-size: 2.5rem;
 }
 
+.about-half-one h4{
+    color: #1548A3;
+
+}
+
 .about-half-one p{
-    color: #fff;
+    color: gray;
     font-weight: 200;
     font-size: 1.1rem;
     padding-right: 5rem;
@@ -886,8 +907,13 @@ p{
 
 
 @media screen and (max-width: 960px) {
+    .about-half-one h3{
+        color: #F27C24;
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
     .about-header{
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
         background-color: #1548A2;
     }
     .header-wrapper-two{
@@ -1018,19 +1044,19 @@ width: 50%;
 
 .mainproducts h3{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .products{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
 .products p{
-    background-color: rgb(193, 189, 189);
+    background-color: rgb(234, 233, 233);
     padding: 2rem;
     border-left: #1548A3 1pc solid;
     font-size: 1.1rem;
@@ -1040,6 +1066,9 @@ width: 50%;
 .mainproducts{
     max-width: 90%;
     margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
 }
 
 .about-half-two p{
@@ -1094,7 +1123,7 @@ width: 50%;
 }
 
 .contactshead{
-    color: white;
+    color: white !important;
     margin: 1rem 0rem;
     width: 80%;
     font-size: 1.2rem;
@@ -1148,6 +1177,9 @@ width: 50%;
     color: rgb(85, 84, 84);
     font-weight: 300;
 }
+.about-content-two{
+    margin-top: 1rem;
+}
 
 @media screen and (max-width: 960px) {
     .products{
@@ -1165,7 +1197,7 @@ width: 50%;
     font-size: 2rem;
 }
 .about-half-one p{
-    color: #fff;
+    color: gray;
     font-weight: 200;
     font-size: 1rem;
     padding-right: 1rem;
@@ -1198,8 +1230,11 @@ width: 50%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: .8rem;
 }
-
+.bottoms_copyright p{
+    font-size: .8rem;
+}
 .location-wrapper{
     background-color: white;
     padding: 4rem 2rem;
@@ -1222,6 +1257,7 @@ width: 50%;
 .copyright h3{
     color: #1548A2;
     margin-bottom: .5rem;
+    font-weight: 700;
 }
 
 .images_social{
@@ -1234,6 +1270,9 @@ width: 50%;
 .services-content-wrapper{
     width: 90%;
     margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
 }
 
 .service-body{
@@ -1364,7 +1403,7 @@ width: 50%;
     content: "";
     z-index: 2;
   }
-  
+/*   
   .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
@@ -1373,7 +1412,7 @@ width: 50%;
   .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  }
+  } */
   
   /* .logos:hover .logos-slide {
     animation-play-state: paused;
@@ -1385,11 +1424,19 @@ width: 50%;
   }
   
   .logos-slide img {
-    height: 50px;
+    height: 60px;
     margin: 0 40px;
   }
 
   @media screen and (max-width: 960px) {
+
+    .services-content-wrapper{
+        width: 90%;
+        margin: 5rem auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
     .detailed-content{
         max-width: 90%;
         margin: 2rem auto;

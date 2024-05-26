@@ -42,26 +42,10 @@ Home
         </div>
         {% endfor %}
 
-        <a href="{% url 'about' %}"><div class="button-two" data-aos="fade-up-left">
+        <a href="{% url 'about' %}"><div class="button-two" data-aos="fade-up">
             READ MORE
         </div></a>
     </div>
-</section>
-<p style="display: flex; justify-content: center; font-weight: 700;">OUR CLIENTS:</p>
-<section >
-    <div class="logos">
-        <div class="logos-slide">
-            {% for logo in logos %}
-            <img src="{{ logo.image.url }}" />
-            {% endfor %}
-        </div>
-  
-        <div class="logos-slide">
-            {% for logo in logos %}
-            <img src="{{ logo.image.url }}" />
-            {% endfor %}
-        </div>
-      </div>
 </section>
 
 {% comment %} quicks {% endcomment %}
@@ -77,6 +61,7 @@ Home
 </section>
 
 
+
 <section class="gratuip-section">
     <div class="gratuip_left">
         <img src="{% static 'images/talent.jpg' %}" width="100%" data-aos="fade-up" />
@@ -85,16 +70,28 @@ Home
         <h2 data-aos="fade-up">GRATUIP: </h2>
         <small data-aos="fade-up">Bridging the Talent Gap in Africa</small>
         <p data-aos="fade-up">As E and M Technology House looks to the future, its sights are set on even greater heights. With a bold goal of training 100,000 talents by 2030, the company is committed to scaling its GRATUIP initiative and replicating its success across the African continent. </p>
-        <ul data-aos="fade-up">
-            <li data-aos="fade-up">Incubation Programs</li>
-            <li data-aos="fade-up">Intellectual Property</li>
-            <li data-aos="fade-up">Commercialization Potential</li>
-            <li data-aos="fade-up">Global Reach</li>
-        </ul>
+     
         <a href="{% url 'gratuip' %}"><h4>
             Read more ...
         </h4></a>
     </div>
+</section>
+
+<div class="client"><p style="display: flex; justify-content: center; font-weight: 500; background-color: #1548A3; width: fit-content; align-items: center; padding: 1rem 2rem; border-radius: 0rem 0rem 3rem 3rem;">HAPPY CLIENTS:</p></div>
+<section >
+    <div class="logos">
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+  
+        <div class="logos-slide">
+            {% for logo in logos %}
+            <img src="{{ logo.image.url }}" />
+            {% endfor %}
+        </div>
+      </div>
 </section>
 
 
