@@ -25,7 +25,6 @@
       <div class="logo" data-aos="fade-down">
         <a href="{% url 'home' %}"> <img src="{% static 'images/emtech_color_logo.png' %}" width="100px" data-aos="fade-up"/></a>
       </div>
-
       <ul>
         <a href="{% url 'home' %}"><li>Home</li></a>
         <a href="{% url 'about' %}"><li>About</li></a>
@@ -33,12 +32,26 @@
         <a href="{% url 'products' %}"><li>Products</li></a>
         <a href="{% url 'contacts' %}"><li>Contacts</li></a>
         <a href="{% url 'gratuip' %}"><li class="gratuip">GRATUIP</li></a>
-      </ul>
-   
-        </a>
-
-      
+      </ul> 
+      <span class="material-symbols-outlined ham">
+        menu
+        </span>     
     </div>
+    </div>
+    <div class="mobile-nav mobnav" >
+        <span class="material-symbols-outlined hamclose" >
+          close
+          </span>
+        <ul>
+          <a href="{% url 'home' %}"><li>Home</li></a>
+          <a href="{% url 'about' %}"><li>About</li></a>
+          <a href="{% url 'services' %}"><li>Services</li></a>
+          <a href="{% url 'products' %}"><li>Products</li></a>
+          <a href="{% url 'contacts' %}"><li>Contacts</li></a>
+          <a href="{% url 'gratuip' %}"><li class="gratuip">GRATUIP</li></a>
+        </ul>
+        <br/>
+        <img src="{% static 'images/homepage-lady.png' %}"  alt="hero-image" width="90%" data-aos="fade-up" />    
     </div>
     {% comment %} MAIN BODY {% endcomment %} 
     {% block content%} 
@@ -50,7 +63,7 @@
         <div class="copyright">
           <h3>FIND US</h3>
           <p>3rd Floor, Samtech business park,<br> Tatu city</p>
-          <p>P.O. Box 11001 - 00100, Nairobi Kenya.</p><p>info@emtechhouse.co.ke</p>
+          <p>P.O. Box 11001 - 00100,Nairobi Kenya.</p><p>info@emtechhouse.co.ke</p>
           <div class="images_social">
             <img src="{% static 'images/WhatsApp.svg' %}" width="30px" data-aos="fade-up"/>
             <img src="{% static 'images/LinkedIn.svg' %}" width="30px" data-aos="fade-up"/>
@@ -64,6 +77,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      let ham = document.querySelector(".ham");
+      let mobnav = document.querySelector(".mobnav");
+      let hamclose = document.querySelector(".hamclose");
+
+      ham.onclick = function(){
+        ham.classList.toggle("active");
+        mobnav.classList.toggle("active");
+        hamclose.classList.toggle("active");
+      }
+
+      document.onclick = function(e){
+        if (!ham.contains(e.target) && !mobnav.contains(e.target)){
+          ham.classList.remove("active");
+          mobnav.classList.remove("active");
+          hamclose.classList.remove("active");
+        }
+      }
     </script>
   </body>
 </html>
